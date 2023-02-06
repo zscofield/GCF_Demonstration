@@ -1,7 +1,7 @@
 {
   "name": "gcf_weather_etl",
   "version": "1.0.0",
-  "description": "",
+  "description": "This GCF allows us to extract , transform and load data from uploaded csv files and write it into BigQuery",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,6 +9,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@google-cloud/storage": "^6.9.1"
+    "@google-cloud/bigquery": "^6.1.0",
+    "@google-cloud/storage": "^6.9.1",
+    "csv-parser": "^3.0.0",
+    "fs": "^0.0.1-security"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.iu.edu:zdscofie/gcf_weather_etl.git"
   }
 }
